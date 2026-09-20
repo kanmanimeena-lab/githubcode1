@@ -1,0 +1,100 @@
+*{
+  padding : 0;
+  margin : 0;
+}
+
+body{
+
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container{
+
+  padding: 50px;
+
+}
+
+.section-one{
+
+  background-color: cadetblue;
+  color : white;
+  padding: 20px;
+  
+}
+ 
+.section-one__name{
+
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.section-one__role{
+
+  font-size: 25px;
+  margin-top : 7px;
+  cursor: pointer;
+}
+.section-one__contact{
+
+  background-color : rgb(63, 114, 116);
+  text-decoration: none;
+  padding : 3px 10px;
+  color: white;
+display:inline-block;
+margin-top:10px;
+cursor: pointer;
+border-radius: 3px;
+}
+
+.section-one, .section-two, .section-three ,
+.section-four , .section-five{
+
+ margin-top: 20px;
+} 
+
+.section-one__desc, .section-two__desc, .section-three__desc, .section-four__desc, .section-five__desc{
+
+  margin-top:10px;
+}
+
+.section-five{
+  background-color: cadetblue;
+  color:white;
+  padding:10px;
+margin-top:30px;
+cursor: pointer;
+}
+
+.section-five__title a {
+
+  color : purple
+}
+
+.section-three li , .section-four li{
+
+list-style: none;
+}
+
+.section-three{
+
+display: inline-block;
+margin-right: 10px;
+background-color: #B8C8BE;
+padding:20px;
+height: 200px;
+cursor: pointer;
+border-radius: 5px;
+vertical-align: top;
+}
+
+.section-four{
+
+  display : inline-block;
+  margin-left: 10px;
+  background-color: #D99AAF;
+  padding:20px;
+  height:200px;
+  border-radius: 5px;;
+}
