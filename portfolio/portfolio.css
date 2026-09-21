@@ -98,3 +98,18 @@ vertical-align: top;
   height:200px;
   border-radius: 5px;;
 }
+
+@media screen and (max-width : 600px){
+
+  .container { 
+
+    width : 100%;
+  }
+ .section-one, .section-two, .section-five,
+  .section-three, 
+
+  .section-four{
+
+    width : 100%;
+  }
+}

@@ -41,3 +41,17 @@ border-bottom: solid rgb(218, 215, 215) 1px;
   border:none;
   color:white;
 }
+
+@media screen and (max-width : 600px){
+
+  .contact-form {
+
+    width : 100%;
+  }
+.contact-form__input, .contact-form__textarea{
+
+  width: 100%;
+  box-sizing: border-box;
+}
+}
+
