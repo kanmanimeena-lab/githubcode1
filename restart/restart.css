@@ -83,3 +83,18 @@ margin-top:10px;
   font-weight: bold;
   color: rgb(143, 4, 4);
 }
+
+@media screen and (max-width : 600px){
+
+  .section-three, .section-one, .section-three{
+    width : 100%;
+  }
+
+    .section-two__image1 {
+    width: 90%;
+  }
+
+  .section__image {
+    height: 250px;
+  }
+}
