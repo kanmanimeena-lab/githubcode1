@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+.container{
+
+  border: 3px solid blue;
+  background-color: rgb(235, 219, 195);
+
+  margin-bottom: 50px;
+  width:60%;
+ margin: 0 auto;
+ margin-top:70px;
+
+}
+div{
+
+  background-color: black;
+color: white;
+width : 55px;
+margin: 5px;
+border-radius: 3px;
+text-align: center;
+
+
+}
+
+h3{
+  text-align: center;
+ 
+}
+hr{
+
+  width:300px;
+  border:none;
+border-bottom: 3px solid rgb(179, 179, 179);
+border-radius: 5px;;  
+
+}
+.image-container{
+
+display:flex;
+justify-content: space-between;
+flex-wrap:wrap;
+
+}
+
+.image{
+
+  border: 1px solid black;
+  width: 20%;
+  height: 200px;
+  object-fit: cover;
+  margin:20px;
+}
+    </style>
+    <body>
+        <div class = "container">
+
+         <div>Header</div>
+          
+         <h3>Image Gallery</h3>
+
+         <hr>
+      
+           <div class = "image-container"></div>
+            <img src = "https://picsum.photos/200/300?random=2" alt = " " class = "image">
+            <img src = "https://picsum.photos/200/300?grayscale" alt = "" class = "image">
+            <img src = "https://picsum.photos/seed/picsum/200/300" alt = "" class = "image">
+            <img src = "https://picsum.photos/200/300" alt = "" class = "image">
+            <img src = "https://picsum.photos/200/300.jpg" alt = "" class = "image">
+            <img src = "https://picsum.photos/200/300.webp" alt = "" class = "image">
+            <img src = "https://picsum.photos/200/300" alt = "" class = "image">
+            <img src = "https://picsum.photos/id/1/200/300" alt = "" class = "image">
+        </div>      
+    </body>
+  </head>
+</html>
