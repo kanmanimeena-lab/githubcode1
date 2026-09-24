@@ -252,25 +252,89 @@ h3{
 
 @media screen and (max-width: 600px) {
 
+  /* NAVBAR */
   .navbar {
     flex-direction: column;
+    gap: 10px;
   }
 
+  .navbar-center {
+    width: 90%;
+  }
+
+  .navbar-right {
+    margin-right: 0;
+  }
+
+
+  /* CATEGORIES */
+  .section-categories {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+
+  /* LEARN */
   .section-learn {
     flex-direction: column;
+    margin: 30px 20px;
   }
 
+  .section-learn__text {
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+
+  .section-learn img {
+    width: 100%;
+    height: auto;
+  }
+
+
+  /* COURSES */
   .section-courses,
   .section-popular {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
+  .section-courses__container {
+    width: calc(50% - 10px);
+  }
+
+  .section-courses__container img {
+    width: 100%;
+    height: auto;
+  }
+
+
+  /* TOPICS */
   .topics_container {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px;
   }
 
-  .footer-one,
+  .topics_container p {
+    flex-basis: calc(50% - 10px);
+  }
+
+
+  /* FOOTER */
+  .footer-one {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
   .footer-two {
     flex-direction: column;
+    gap: 15px;
   }
 }
