@@ -551,191 +551,344 @@ font-size:15px;
 
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width: 600px) {
 
-  body{
-
-  font-size: 10px;
+  * {
+    box-sizing: border-box;
   }
-  .header-container{
 
-  
-        width: 100%;
+  body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+
+  /* ================= HEADER ================= */
+
+  .header-container {
+    width: 100%;
+    padding: 10px 18px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: nowrap
-   
+
+    flex-wrap: nowrap;
   }
 
-  .header-logo{
-
-    width: 130px;
-    margin-left:20px;
+  .header-right {
+    flex: 0 0 auto;
+    margin: 0;
   }
-  .header-right{
 
-   margin-right: auto; 
+  .header-logo {
+    width: 140px;
   }
-.header-center{
 
-display:none;
-}
+  .header-center {
+    display: none;
+  }
 
-.header-signin__button{
+  .header-signin__button {
+    flex: 0 0 auto;
+    margin-left: auto;
+    padding: 12px 20px;
+  }
 
-  margin-right:50px;
-}
 
-.search__middle{
-  margin-left:20px;
-  margin-right:20px;
-}
-.search__last{
-flex-grow:1;
-flex-wrap: wrap;
-flex-basis: 20%px;
-}
-.search__text{
+  /* ================= SEARCH ================= */
 
-  font-size: 10px;
-}
-.search-last__ai{
+  .search {
+    width: 100%;
+    margin: 0;
+    padding: 30px 15px;
+  }
 
-  display:none;
-}
+  .search h1 {
+    font-size: 48px;
+    text-align: center;
+    margin: 50px 0 80px;
+  }
+
+  .search__middle {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 10px;
+
+    overflow: hidden;
+  }
+
+  .search-home__icon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search__button {
+    font-size: 17px;
+    padding: 0;
+  }
+
+  .search-last {
+    width: 100%;
+    margin: 40px auto;
+  }
+
+  .search__text {
+    width: 100%;
+  }
+
+
+  /* ================= BANNER ================= */
 
   .banner {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    height: auto;
+    margin: 30px 0;
+    padding: 0;
   }
 
-  .banner img {
+  .banner > img {
     width: 100%;
     height: auto;
     display: block;
   }
 
-  .verticalline {
-  display: none;
-  }
-
   .banner-last {
     width: 100%;
-    height: auto;
-    position: static;
-    text-align: center;
     padding: 20px;
-    margin-top:5px;
-    margin-left:0;
-  }
-  .interest-container{
-flex-grow:1;
-flex-wrap:wrap;
-margin-left:50px;
-  
   }
 
-  .travelh2{
 
-    margin-left: 50px;
+  /* ================= INTEREST ================= */
+
+  .interest {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
   }
 
-  .traveladvice{
+  .interest-container {
+    width: 100%;
+    padding: 0 15px;
 
-
-margin-left:20px;
-    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
   }
 
-  .traveladvice p{
-
-text-align: center;
-  }
-  .owntrip{
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    width:80%;
-    margin-left:20px;
-    height:200px;
+  .interest-outdoor {
+    width: 100%;
   }
 
-   .inspiration {
+  .interest-outdoor img {
+    width: 100%;
     height: auto;
-    overflow: hidden;
-    padding-bottom: 30px;
+  }
+
+
+  /* ================= TRAVEL ADVICE ================= */
+
+  .travelh2 {
+    margin: 30px 15px 20px;
+  }
+
+  .traveladvice {
+    width: 100%;
+    padding: 0 15px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .traveladvice p {
+    width: 100%;
+    margin: 0;
+    padding: 15px 5px;
+
+    border: 1px solid black;
+    text-align: center;
+  }
+
+
+  /* ================= OWN TRIP ================= */
+
+  .owntrip {
+    width: calc(100% - 30px);
+    margin: 30px 15px;
+    padding: 20px 10px;
+
+    display: block;
+  }
+
+  .create__owntrip {
+    text-align: center;
+  }
+
+  .days__container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .days__owntrip {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+  }
+
+  .days__owntrip p {
+    margin: 0;
+    padding: 12px 3px;
+    border: 1px solid black;
+    text-align: center;
+  }
+
+  .coming__container {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .coming__owntrip {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+  }
+
+  .coming__owntrip p {
+    margin: 0;
+    padding: 12px 3px;
+    border: 1px solid black;
+  }
+
+
+  /* ================= INSPIRATION ================= */
+
+  .inspiration {
+    width: 100%;
+    padding: 20px 15px;
   }
 
   .insp-section {
-    display: flex;
- 
-    gap: 15px;
-    margin: 0 10px;
-  }
+    width: 100%;
 
-   .insp-section {
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 15px;
+    flex-direction: column;
+    gap: 25px;
   }
 
   .insp-section__1 {
-    flex: 0 0 220px;
+    width: 100%;
   }
 
-   .section-popular {
-        width: 100%;
-        margin: 30px 0;
-        padding: 0 20px;
-        text-align: left;
-    }
-
-    .popular-container {
-        width: 100%;
-        margin: 0;
-        padding: 0 20px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-
-       .popular-container {
-        width: 100%;
-        padding: 0 10px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .popular-container__image {
-        width: calc(50% - 10px);
-        margin: 0;
-    }
-
-    .popular-image {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
-
-
- .section-last {
+  .insp-img {
     width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+  /* ================= MOST POPULAR ================= */
+
+  .section-popular {
+    width: 100%;
+    margin: 30px 0 20px;
+    padding: 0 15px;
+  }
+
+  .section-popular h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .section-popular p {
+    font-size: 24px;
+    margin: 0;
+  }
+
+
+  /* ================= POPULAR CARDS ================= */
+
+  .popular-container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 30px 10px;
+  }
+
+  .popular-container__image {
+    width: calc(50% - 5px) !important;
+    flex: 0 0 calc(50% - 5px) !important;
+
+    margin: 0 !important;
+    padding: 0;
+
+    box-sizing: border-box;
+  }
+
+  .popular-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .popular-container__image h3 {
+    font-size: 15px;
+    line-height: 1.1;
+    margin: 5px 0;
+  }
+
+  .popular-container__text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-size: 13px;
+  }
+
+  .popular-graph {
+    width: 14px;
+    height: 14px;
+  }
+
+  .popular-ferries {
+    margin: 5px 0;
+  }
+
+  .popular-button {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 15px 0;
+  }
+
+
+  /* ================= LAST SECTION ================= */
+
+  .section-last {
+    width: 100%;
+    margin: 30px 0;
+    padding: 15px;
   }
 
   .section-last__1 {
-    display: flex;
-    flex-direction: column;
     width: 100%;
+    margin: 0;
   }
 
   .section-last__1 > img {
@@ -746,13 +899,27 @@ text-align: center;
 
   .section-last__2 {
     width: 100%;
+    padding: 30px 15px;
     text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
   }
 
   .section-last__2 h1 {
     font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .section-last__text {
+    font-size: 16px;
+  }
+
+  .section-last__button {
+    margin: 20px auto;
+  }
+
+  .sectionlast__logo {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
   }
 
 }
