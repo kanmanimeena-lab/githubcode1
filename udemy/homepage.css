@@ -400,6 +400,10 @@ text-align: center;
   flex-grow:1;
 
 }
+.section-learn{
+
+  display:none;
+}
 .image__text{
 
   font-size: 7px;
