@@ -385,6 +385,7 @@ h3{
 
     flex-basis : 40%;
   }
+ 
 
   .topics_container{
 flex-wrap: wrap;
@@ -399,6 +400,11 @@ text-align: center;
   flex-basis:40%;
   flex-grow:1;
 
+}
+
+.recommended{
+
+  margin-top:30px;
 }
 .section-learn{
 
@@ -419,6 +425,7 @@ h3{
 
   font-size:10px;
 }
+
 
    .section-banner__flash {
         top: 30%;
