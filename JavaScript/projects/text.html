@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message count</title>
+</head>
+<style>
+
+  body{
+
+    background-color: rgb(224, 219, 142);
+  }
+
+  .header{
+
+    display: flex;
+    gap:30px;
+  align-items: center;
+  }
+
+  .logo{
+    margin-left: 20px;
+    width:70px;
+    height:70px;
+  }
+
+.image{
+
+  width:100%;
+  height:300px;
+  object-fit: contain;
+}
+
+  .message{
+    margin-top:20px;
+    margin-left: 620px;
+    padding:60px;
+    margin-bottom:10px;
+
+  }
+
+.button{
+ 
+  display:block;
+  margin:0 auto;
+  padding:5px 40px;
+  background-color: rgb(248, 35, 35);
+  border:none;
+  border-radius: 50px;
+  color:white;
+}
+
+.button:hover{
+
+color:black;
+}
+.display{
+
+margin-left: 550px;
+color: orangered;
+}
+
+@media screen and (max-width: 600px){
+
+  body{
+
+    font-size: 10px;
+    
+  }
+
+  .message{
+    margin-top:20px;
+    margin-left: 100px;
+    padding:60px;
+    margin-bottom:10px;
+  }
+    .display{
+
+    margin-left :10px;
+}
+
+
+ 
+  }
+
+
+</style>
+
+<body>
+
+  <div class = "header">
+    <img src = "heart.png" class = "logo">
+    <h2>Beloved Greeting</h2>
+  </div>
+
+<div>
+<img src = "birthday.jpg"class = "image">
+
+</div>
+  
+  <textarea placeholder = "Max 200 letters" class = "message js-message"></textarea>
+
+  <button onclick = "submitButton()"class = "button  js-button__submit" >Submit</button>
+  <h3 class = "js-display display"></h3>
+
+</body>
+<script src = "text.js"></script>
+</html>

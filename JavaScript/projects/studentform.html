@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Form</title>
+
+  <style>
+
+    body{
+
+      height:3000px;
+      background-color: lightblue;
+    }
+
+    table{
+
+      margin:20px auto;
+      padding:10px;
+    
+    }
+
+    th, td {
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+
+.form-container{
+
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px;
+
+}
+.button{
+margin-top:5px;
+margin-bottom: 5px;
+  margin-left:8px;
+  padding: 4px 25px;
+  background-color: rgb(4, 179, 238);
+  color:white;
+  border-radius: 5px;
+  border: none;
+}
+
+.button1{
+margin-bottom: 5px;
+  margin-left:28px;
+  padding: 4px 40px;
+  margin-top:5px;
+  background-color: rgb(4, 179, 238);
+  color:white;
+  border:none;
+   border-radius: 5px;
+   cursor:pointer;
+}
+
+.button:hover ,.button1:hover{
+
+  background-color: transparent;
+  color:black;
+  border:rgb(6, 6, 158) 1px solid;
+}
+
+
+.address {
+
+  padding : 20px 5px;
+ 
+}
+
+.date{
+
+  padding-right:32%;
+}
+.select{
+
+  padding-right:60%;
+}
+
+.delete{
+
+  background-color: black;
+  color:white;
+  border : none;
+  padding:5px 8px;
+  border-radius: 5px;
+  cursor:pointer;
+  transition: 0.5s;
+  
+}
+
+.delete:hover{
+
+ transform: scale(1.1);
+  opacity: 1;
+
+}
+
+div{
+
+  display:flex;
+  gap:20px;
+  align-items: center;
+  padding:15px 30px;
+}
+h3{
+
+  margin-top:25px;
+  color:navy;font-size:28px;
+}
+div img {
+
+  width:70px;
+  height:70px;
+  object-fit: contain;
+}
+
+.header{
+
+  position:sticky;
+  top:0;
+  background-color: white;
+  z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class = "header">
+
+    <img src = "graduation.png">
+
+   <h3>EduNova Institute</h3>
+  </div>
+  
+<h1 style = "text-align: center;">Student Registration Form</h1>
+
+<div class = "form-container">
+  <form>
+
+    <table border = "1" >
+
+      <tr>
+        <td class = "first">First Name</td>
+         <td><input placeholder = "Enter the First  Name" class = "js-first"></td>
+      </tr>
+
+       <tr>
+        <td>Second Name</td>
+         <td><input placeholder = "Enter the Second Name" class = "js-second"></td>
+      </tr>
+     
+      <tr>
+        <td>Date of Birth</td>
+        <td><input type = "date" class = "date js-date"></td>
+      </tr>
+
+       <tr>
+        <td>Gender</td>
+        <td>
+        <select class = "select js-select">
+          <option>Male</option>
+          <option>Female</option>
+          <option>Others</option>
+        </select>
+       </td>
+      </tr>
+
+       <tr>
+        <td>Roll No</td>
+        <td><input placeholder = "Enter the Unique ID" class = "js-roll" readonly></td>
+      </tr>
+
+       <tr>
+        <td>Course</td>
+        <td><input placeholder = "Enter the course" class = "js-course"></td>
+      </tr>
+
+       <tr>
+        <td>Address</td>
+        <td><input placeholder = "Address" class = "address js-address"></td>
+      </tr>
+
+       <tr>
+        <td>County</td>
+        <td><input placeholder = "County" class = "js-county"></td>
+      </tr>
+
+      <tr>
+        <td>Contact Number</td>
+        <td><input placeholder = "Max 10 Numbers"class = "js-phone"></td>
+
+      </tr>
+     
+       <tr>
+        <td>ERICODE</td>
+        <td><input type = "email" placeholder = "D23" class = "js-eir"></td>
+      </tr>
+
+
+       <tr>
+        <td>Email ID</td>
+        <td><input type = "email" placeholder="Enter the Email id" class = "js-email"></td>
+      </tr>
+
+      
+
+       <tr>
+        <td>Used ID</td>
+        <td><input placeholder="Email address/phone number" class = "js-user"></td>
+      </tr>
+
+       <tr>
+        <td>Password</td>
+        <td><input type = "password" placeholder="Max 6 character/number" class = "js-password"></td>
+      </tr>
+
+     <tr>
+       <td><button class = "button">Reset</button></td>
+      <td><button type = "button" onclick = "updateTable()" class = "button1 js-button">Save</button></td>
+     </tr>
+    </table>
+  </form>
+   </div>
+
+<div>
+<table border = 1 class = "js-updatetable">
+<tr>
+
+  <th>First Name</th>
+
+  <th>Second Name</th>
+  <th>DOB</th>
+  <th>Gender</th>
+  <th>Roll No</th>
+  <th>Course</th>
+  <th>Address</th>
+  <th>County</th>
+  <th>Contact Number</th>
+  <th>Eircode</th>
+  <th>Email ID</th>
+  <th>User ID</th>
+  <th>Action</th>
+
+</table>
+
+</div>
+
+<script src = "studentform.js"></script>
+</body>
+</html>
